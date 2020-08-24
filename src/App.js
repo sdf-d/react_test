@@ -1,13 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MainComp from './MainComp'
-
+import CounterButton from './CounterButton'
 
 function App() {
   return (
-    <div>
-    	<MainComp />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+	<CounterButton />
+	<CounterButton />
+      </header>
     </div>
   );
 }
